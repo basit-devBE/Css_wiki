@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.0/marked.min.js"></script>
+
+</head>
+<body>
+    <style>
+        .markdown-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .markdown-container textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .markdown-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .markdown-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+<div class="markdown-container">
+    <textarea id="markdownInput" rows="10" cols="50"
+      placeholder="Enter your text in an markdown format with appropriate tags."></textarea>
+    <button onclick="convertMarkdownToHTML()">Convert</button>
+  </div>
+
+    
+    <div id="htmlOutput"></div>
+    
+    <script src="../jsSCript/script.js"></script>
+</body>
+</html>
