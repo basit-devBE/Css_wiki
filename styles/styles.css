@@ -1,0 +1,79 @@
+h1{
+  text-align:center;
+ 
+}
+p{
+  text-align:center;
+  padding-bottom:20px;
+  
+}
+
+.wiki-image{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 200px;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+form{
+  padding-top:20px;
+}
+.search-input{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:400px;
+  padding:10px;
+  border-width:1px;
+  border-color:blue;
+  
+}
+button{
+  background-color:whitesmoke;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 30px;
+  padding:5px;
+  color:blue;
+ font-weight:bold;
+border: 1px solid #ccc;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
+
+}
+.horizontal-line{
+  width:100%;
+  height:1px;
+  background-color: #ccc;
+  margin-top:30px;
+}
+
+.grid-container{
+  display: grid;
+  /* grid-template-columns: repeat(4,1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item{
+  padding:10px;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for screens up to 768px wide */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column for screens up to 480px wide */
+  }
+}
