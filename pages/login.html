@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/ec73e0dced.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form-box">
+            <p>Welcome to GROUP 1AE1 wikipedia page</p>
+        
+
+            <h1 id="title">Login/SignUp</h1>
+
+            <form action="">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name" id="nameField">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter Your Email ">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Your Password">
+                    </div>
+
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="submitBtn" class="disable">Login</button>
+                    <button type="submit"  id="logBtn" >or sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let logBtn = document.getElementById("logBtn");
+        let submitBtn = document.getElementById("submitBtn");
+        let title = document.getElementById("title");
+        let nameField = document.getElementById("title");
+
+        logBtn.addEventListener("click", function(){
+            nameField.style.maxHeight = "0";
+            
+
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
