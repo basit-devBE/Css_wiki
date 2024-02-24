@@ -5,34 +5,64 @@
   <title>Edit Page</title>
   <link rel="icon" href="../assets/wikipedia.ico" />
   <link rel="stylesheet" href="../styles/editstyle.css" />
+  <link rel="stylesheet" href="../styles/navbarstyles.css" />
 
    
 </head>
 <body>
-    <div style="display: flex; justify-content: space-around;">
+
+
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <img src="../assets/wiki.png" alt="Wikipedia Logo" height="50px" />
+      <div >
+        <p>
+          <img src="../assets/wiki1.svg" alt="Icon 1" height="15px" />
+         </p> 
+         <p>
+          <img src="../assets/wiki3.svg" alt="Icon 2" height="15px" />
+         </p> 
+      
+      </div>
+    
+    </div>
+    <div class="navbar-search-wrapper">
+      <input type="text" placeholder="Search Wikipedia" class="navbar-search-input" />
+      <button class="navbar-search-button">Search</button>
+    </div>
+    <div class="navbar-sidebar">
+      <a href="../pages/entry.html" class="navbar-sidebar-link">Entry</a>
+      <a href="#" class="navbar-sidebar-link" style="text-decoration: underline; color: rgb(17, 216, 61);">Edit</a>
+      <a href="../pages/random.html" class="navbar-sidebar-link">Random</a>
+    </div>
+  </div>
+  
+
+    <!-- <div style="display: flex; justify-content: space-around;">
         <div style="display: flex;">
             <div>
-                <img src="../assets/wiki.png" height="50px"  />
+                <img src="../assets/wiki.png" height="50px" style="margin: 10px;" />
             </div>
             <div  style="margin: 10px 5px 0px;">
                 <p>  <img src="../assets/wiki1.svg" height="15px"  /></p>
               <p> <img src="../assets/wiki3.svg" height="15px"  /></p>
             </div>
         </div>
-  
-        <div style="margin-top: 10px;">
-          <input type="text" placeholder="Search Wikipedia" style="width: 300px;" />
-          <button >Search</button>
+        <div style="display: flex; height: 40px; margin-top: 20px;">
+          <input type="text" placeholder="Search Wikipedia" style="border:bold; border-color: #fff; font-size: 16px; padding: 10px; border-radius: 5px; width: 250px; " />
+          <button style="border: none; background-color: #4CAF50; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.2s ease-in-out; ">Search</button>
         </div>
+        
+        
   
-        <div style="margin-top: 10px; width: 200px; color: blue;" >
+        <div style="margin-top: 30px; width: 200px; color: blue;" >
             <div style="display: flex; justify-content: space-between;">
               <a href="../pages/entry.html" style="text-decoration: none">Entry</a>
               <a href="#" >Edit</a>
               <a href="../pages/random.html" style="text-decoration: none" >Random</a>
             </div>
         </div>
-      </div>
+      </div> -->
     <div class="container">
       <header>
      
